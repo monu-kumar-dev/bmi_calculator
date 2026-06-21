@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="first">
+                <h2>BMI Calculator</h2>
+                <button id="darkbtn">🌙 Dark Mode</button>
+            </div>
+
+            <form action="#" class="form">
+                <label for="height">Height (cm)</label>
+                <input type="number" id="height" name="height" title="height" placeholder="Enter height in cm">
+                <small class="error-message" id="heightError"></small>
+
+                <label for="weight">weight (kg)</label>
+                <input type="number" id="weight" name="weight" title="weight" placeholder="Enter weight in kg">
+                <small class="error-message" id="weightError"></small>
+
+                <button type="submit" id="Calculate-btn">Calculate BMI</button>
+            </form>
+
+            <section class="result-section">
+                <h2>BMI Result</h2>
+                <p id="result">--</p>
+
+                <h2 id="status">Status</h2>
+                <p id="checkStatus">--</p>
+
+                <h2>Tip:</h2>
+                <p id="give_Tip">--</p>
+            </section>
+
+            <button type="button" id="reset">Reset</button>
+            <button type="button" id="clrhistory">Clear History</button>
+
+            <h2>History</h2>
+            <div class="history">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
